@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighTech - Meet Our Team</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(157, 173, 173);
+        }
+        .custom-navbar {
+            background: linear-gradient(90deg, #91ad91, #89ba9f);
+        }
+
+        .team-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%; /* Equal height for all cards */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px #89ba9f;
+            cursor: pointer;
+        }
+
+        .team-card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            flex: 1; /* Makes all descriptions align evenly */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .social-icons a {
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .social-icons a.facebook:hover {
+            color: #1877f2; /* Facebook Blue */
+        }
+
+        .social-icons a.linkedin:hover {
+            color: #0077b5; /* LinkedIn Blue */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm py-3">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold text-white fs-4 d-flex align-items-center" href="#">
+            <img src="./l.png" 
+                 alt="HighTech Logo" 
+                 width="38" 
+                 height="38" 
+                 class="me-2 rounded-circle bg-white p-1 shadow">
+            HighTech
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link text-white px-3" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-3" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-3" href="#services">Services</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-warning fw-bold">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="text-center py-5 bg-light">
+    <div class="container">
+        <h1 class="fw-bold text-dark display-4">Meet Our Team</h1>
+        <p class="lead text-muted mt-3">
+            At HighTech, our talented professionals work together to deliver innovative digital solutions.
+            We combine creativity, technical expertise, and collaboration to achieve excellence.
+        </p>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="py-5">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+
+            <!-- Team Member -->
+            <div class="col-md-4 col-lg-3 d-flex">
+                <div class="card team-card shadow-lg w-100">
+                    <img src="./p1.jpg" class="card-img-top" alt="Mahnoor">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Mahnoor</h5>
+                        <p class="text-primary">Lead Developer</p>
+                        <p class="text-muted text-sm">Expert in building scalable applications & leading development teams.</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" class="facebook mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://linkedin.com" class="linkedin mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member -->
+            <div class="col-md-4 col-lg-3 d-flex">
+                <div class="card team-card shadow-lg w-100">
+                    <img src="./p5.jpg" class="card-img-top" alt="Sarah Smith">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Nosherwan</h5>
+                        <p class="text-success">UI/UX Designer</p>
+                        <p class="text-muted text-sm">Creates visually stunning and user-friendly interfaces.</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" class="facebook mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://linkedin.com" class="linkedin mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member -->
+            <div class="col-md-4 col-lg-3 d-flex">
+                <div class="card team-card shadow-lg w-100">
+                    <img src="./p2.jpg" class="card-img-top" alt="Michael Lee">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Michael Lee</h5>
+                        <p class="text-warning">Project Manager</p>
+                        <p class="text-muted text-sm">Ensures smooth workflow and timely delivery of projects.</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" class="facebook mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://linkedin.com" class="linkedin mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member -->
+            <div class="col-md-4 col-lg-3 d-flex">
+                <div class="card team-card shadow-lg w-100">
+                    <img src="./p3.jpg" class="card-img-top" alt="Emma Davis">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Emma Davis</h5>
+                        <p class="text-danger">Marketing Specialist</p>
+                        <p class="text-muted text-sm">Builds creative campaigns that increase brand reach.</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" class="facebook mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://linkedin.com" class="linkedin mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member -->
+            <div class="col-md-4 col-lg-3 d-flex">
+                <div class="card team-card shadow-lg w-100">
+                    <img src="./p4.jpg" class="card-img-top" alt="Chris Brown">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Chris Brown</h5>
+                        <p class="text-info">QA Engineer</p>
+                        <p class="text-muted text-sm">Tests software to ensure top quality and performance.</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" class="facebook mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://linkedin.com" class="linkedin mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member -->
+            <div class="col-md-4 col-lg-3 d-flex">
+                <div class="card team-card shadow-lg w-100">
+                    <img src="./p6.jpg" class="card-img-top" alt="Sophia Wilson">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Sophia Wilson</h5>
+                        <p class="text-purple-600">Data Analyst</p>
+                        <p class="text-muted text-sm">Analyzes data to drive smart business decisions.</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" class="facebook mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://linkedin.com" class="linkedin mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-white text-center py-4 mt-5">
+    <p class="mb-0 text-dark fw-bold">© 2025 HighTech. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
